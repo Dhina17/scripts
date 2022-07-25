@@ -1,3 +1,5 @@
+set -e
+
 # Initital setup
 # Install required packages.
 # Credits - https://github.com/akhilnarang/scripts
