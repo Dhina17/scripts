@@ -1,0 +1,13 @@
+set -e
+
+# Get the patch link from the args
+PATCH_LINK=$1
+# Get the patch
+PATCH=$(curl -s $PATCH_LINK)
+
+# Retrieve the author and date from the patch
+AUTHOR=$(grep "^From:.\+@" <<< $PATCH | sed "s/From://g")
+DATE=$(grep "^Date:" <<< $PATCH | sed "s/Date://g")
+
+# Append to the current commit
+git commit --amend --author="$AUTHOR" --date="$DATE"
