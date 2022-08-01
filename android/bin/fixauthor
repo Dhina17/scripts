@@ -1,5 +1,12 @@
 set -e
 
+# Check for args
+if [$1 == ""]
+then
+    echo "$0: Please give a patch link"
+    exit 1 # error
+fi
+
 # Get the patch link from the args
 PATCH_LINK=$1
 # Get the patch
