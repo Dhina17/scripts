@@ -3,6 +3,8 @@ set -e
 # Configs
 # Use raw file link
 GERRIT_SSH_PRIVATE_KEY_LINK=""
+#Gdrive shared drive or folder ID
+GDRIVE_PARENT_ID=""
 
 # Initital setup
 # Install required packages.
@@ -24,3 +26,9 @@ wget https://raw.githubusercontent.com/usmanmughalji/gdriveupload/master/gdrive
 chmod +x gdrive
 sudo install gdrive /usr/local/bin/gdrive
 rm gdrive
+
+# Add custom function to handle gdrive shared drive
+# Usage gu <file_name>
+CUS_FUNC="gu() { gdrive upload --share "${1:?Error: Please give file name}"  --parent $GDRIVE_PARENT_ID }"
+echo $CUS_FUNC >> ~/.bashrc
+source ~/.bashrc
