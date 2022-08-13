@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2022 Dhina17 <dhinalogu@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 set -e
 
 # Install and setup ZSH
