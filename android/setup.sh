@@ -35,7 +35,7 @@ rm gdrive
 
 # Add custom function to handle gdrive shared drive
 # Usage gu <file_name>
-CUS_FUNC="gu() { gdrive upload --share "${1:?Error: Please give file name}"  --parent $GDRIVE_PARENT_ID }"
+CUS_FUNC="gu() { gdrive upload --share \"\${1:?Error: Please give file name}\"  --parent $GDRIVE_PARENT_ID }"
 if [[ $(basename $SHELL) == "zsh"]]; then
     echo $CUS_FUNC >> ~/.zshrc
     source ~/.zshrc
