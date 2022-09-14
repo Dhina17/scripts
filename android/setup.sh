@@ -12,6 +12,19 @@ GERRIT_SSH_PRIVATE_KEY_LINK=""
 #Gdrive shared drive or folder ID
 GDRIVE_PARENT_ID=""
 
+# Check for variables before run
+# Check for gerrit ssh private key link
+if [[ -z $GERRIT_SSH_PRIVATE_KEY_LINK ]]; then
+    echo "Gerrit SSH private key link is empty"
+    exit 1
+fi
+
+# Check for gdrive shared drive id
+if [[ -z $GDRIVE_PARENT_ID ]]; then
+   echo "Gdrive parent ID is empty"
+   exit 1
+fi
+
 # Initital setup
 # Install required packages.
 # Credits - https://github.com/akhilnarang/scripts
