@@ -13,6 +13,14 @@ then
     exit 1 # error
 fi
 
+# Only allow to run in a git repository
+GIT_STATUS=$(git status > /dev/null 2>&1; echo $?)
+if [$GIT_STATUS != 0]
+then
+    echo "$0: Not a git repository!"
+    exit 1 # error
+fi
+
 # Get the patch link from the args
 PATCH_LINK=$1
 # Get the patch
