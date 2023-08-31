@@ -44,5 +44,7 @@ async function handleRequest(request) {
             const data = await fetch(url);
         }
     }
-    return new Response("OK") // Doesn't really matter
+    // Important to notify the telegram that we consumed the updates.
+    // Otherwise Telegram will push older updates again and again.
+    return new Response("OK") 
 }
