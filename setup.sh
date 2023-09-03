@@ -20,3 +20,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git -b master ${Z
 # Install zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions.git -b master ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+# Install micro editor
+sudo apt install micro
