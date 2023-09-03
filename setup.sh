@@ -22,3 +22,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git -b master ${ZSH_C
 
 # Install micro editor
 sudo apt install micro
+# Copy micro configs
+wget -O ~/.config/micro/settings.json https://github.com/Dhina17/dotfiles/raw/main/.config/micro/settings.json
