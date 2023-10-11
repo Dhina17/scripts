@@ -9,8 +9,10 @@ set -e
 # Install micro editor
 curl https://getmic.ro | bash
 sudo mv micro /usr/local/bin/
-# Copy micro configs
-mkdir -p ~/.config/micro/
+# Make micro configs dir
+mkdir -p ~/.config/micro/colorschemes/
+# Copy settings and dracula theme
+wget -O ~/.config/micro/colorschemes/dracula.micro https://github.com/Dhina17/dotfiles/raw/main/.config/micro/colorschemes/dracula.micro
 wget -O ~/.config/micro/settings.json https://github.com/Dhina17/dotfiles/raw/main/.config/micro/settings.json
 
 # Install cool plugins to make life easier.
