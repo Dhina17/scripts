@@ -1,12 +1,13 @@
 # To build LMODroid 6 by picking patches from gerrit
 # Repo int fifteen branch locally
-# repo init -u https://git.libremobileos.com/LMODroid/manifest.git -b fifteen --git-lfs
 #
-# Then pick the Android 15 manifest to .repo/manifests/
-# 13821: manifest: Android 15 release | https://gerrit.libremobileos.com/c/LMODroid/manifest/+/13821
+# > repo init -u https://gerrit.libremobileos.com/LMODroid/manifest -b refs/changes/21/13821/11 --git-lfs
+#
+# Then add zahedan repos to local manifest
+# > wget https://katb.in/sugafoquvon/raw -O .repo/local_manifests/zahedan.xml
 #
 # Then sync
-# repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+# > repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 #
 # Now run this script from the root of the source dir
 #
