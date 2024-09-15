@@ -43,6 +43,11 @@ repopick 13845
 # hardware/google/pixel
 repopick 13958-13964
 
+# packages/apps/Gallery2
+cd packages/apps/Gallery2
+git fetch https://github.com/LineageOS/android_packages_apps_Gallery2 refs/changes/98/402398/1 && git cherry-pick FETCH_HEAD
+cd -
+
 # system/sepolicy
 repopick 13827-14111
 
