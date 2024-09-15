@@ -163,7 +163,10 @@ repopick 14201
 repopick 14202
 
 # system/sepolicy
-repopick 13827-14111
+repopick 13827-13840
+repopick 13864-13866
+#DNM
+repopick 14111
 
 # system/tools/mkbootimg
 repopick 14203
@@ -175,4 +178,5 @@ repopick 14219-14226
 repopick 14204-14218
 
 # vendor/lmodroid
-repopick 13824-13861
+repopick 13824
+repopick 13849-13861
