@@ -128,11 +128,6 @@ repopick 14183-14184
 # kernel/configs
 repopick 14185-14190
 
-# packages/apps/Gallery2
-cd packages/apps/Gallery2
-git fetch https://github.com/LineageOS/android_packages_apps_Gallery2 refs/changes/98/402398/1 && git cherry-pick FETCH_HEAD
-cd -
-
 # system/bpf
 repopick 14191-14192
 
