@@ -1,7 +1,7 @@
 # To build LMODroid 6 by picking patches from gerrit
 # Repo int fifteen branch locally
 #
-# > repo init -u https://gerrit.libremobileos.com/LMODroid/manifest -b refs/changes/21/13821/11 --git-lfs
+# > repo init -u https://gerrit.libremobileos.com/LMODroid/manifest -b fifteen --git-lfs
 #
 # Then add zahedan repos to local manifest
 # > wget https://katb.in/sugafoquvon/raw -O .repo/local_manifests/zahedan.xml
@@ -35,7 +35,7 @@ repopick 13867-13952
 repopick 14116
 
 # development
-repopick 13843
+# repopick 13843
 
 # device/daria/zahedan
 repopick 13862-13863
@@ -50,44 +50,44 @@ cd -
 repopick 13965
 
 # external/avb
-repopick 14117-14118
+# repopick 14117-14118
 
 # external/dtc
 repopick 14119-14126
 
 # external/e2fsprogs
-repopick 13998-14000
+# repopick 13998-14000
 
 # external/exfatprogs
 # external/federated-compute
 # external/flatbuffers
 
 # external/gptfdisk
-repopick 13966-13970
+# repopick 13966-13970
 
 # external/libcxx
 # external/libnl
 # external/libvpx
 
 # external/mksh
-repopick 14001-14003
+# repopick 14001-14003
 
 # external/setupcompat
-repopick 14131-14137
+# repopick 14131-14137
 
 # external/tensorflow
 
 # external/tinycompress
-repopick 14138-14140
+# repopick 14138-14140
 
 # external/webp
 # external/wpa_supplicant_8
 
 # external/zstd
-repopick 13847-13848
+# repopick 13847-13848
 
 # frameworks/lmodroid
-repopick 13845
+# repopick 13845
 
 # frameworks/opt/colorpicker
 repopick 14141
@@ -114,16 +114,16 @@ repopick 13958-13964
 repopick 14167-14177
 
 # hardware/libhardware
-repopick 14178-14180
+# repopick 14178-14180
 
 # hardware/ril
-repopick 14181
+# repopick 14181
 
 # hardware/samsung/nfc
-repopick 14182
+# repopick 14182
 
 # hardware/st/nfc
-repopick 14183-14184
+# repopick 14183-14184
 
 # kernel/configs
 repopick 14185-14190
@@ -144,13 +144,13 @@ repopick 14196
 repopick 14197
 
 # system/libziparchive
-repopick 14198
+# repopick 14198
 
 # system/logging
-repopick 14199-14200
+# repopick 14199-14200
 
 # system/media
-repopick 14201
+# repopick 14201
 
 # system/netd
 
@@ -164,7 +164,7 @@ repopick 13864-13866
 repopick 14111
 
 # system/tools/mkbootimg
-repopick 14203
+# repopick 14203
 
 # system/update_engine
 repopick 14219-14226
