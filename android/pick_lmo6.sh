@@ -38,13 +38,7 @@ repopick 14116
 # repopick 13843
 
 # device/daria/zahedan
-repopick 13862-13863
-
-# Pick build fix from device/lineage/sepolicy
-cd device/lineage/sepolicy
-git fetch https://github.com/LMODroid-TMP/platform_device_lineage_sepolicy 467ed968543f9c808943c98aff8165ca7dbe4e80
-git cherry-pick FETCH_HEAD
-cd -
+repopick 13862
 
 # device/mediatek/sepolicy_vndr
 repopick 13965
@@ -86,8 +80,21 @@ repopick 14119-14126
 # external/zstd
 # repopick 13847-13848
 
+# frameworks/av
+repopick 14311-14336
+
+# frameworks/base
+cd frameworks/base
+git fetch https://git.libremobileos.com/Dhina17/platform_frameworks_base fifteen-qpr0-new
+git checkout FETCH_HEAD
+cd -
+
+# frameworks/native
+repopick 13846
+repopick 14275-14294
+
 # frameworks/lmodroid
-# repopick 13845
+repopick 14523
 
 # frameworks/opt/colorpicker
 repopick 14141
@@ -113,6 +120,12 @@ repopick 13958-13964
 # hardware/interfaces
 repopick 14167-14177
 
+# hardware/mediatek
+cd hardware/mediatek
+git fetch https://github.com/LMODroid-TMP/platform_hardware_mediatek fifteen-qpr0
+git checkout FETCH_HEAD
+cd -
+
 # hardware/libhardware
 # repopick 14178-14180
 
@@ -127,6 +140,27 @@ repopick 14167-14177
 
 # kernel/configs
 repopick 14185-14190
+
+# packages/apps/FMRadio
+repopick 14580
+
+# packages/apps/GameSpace
+repopick 14578
+
+# packages/apps/Launcher3
+repopick 14565-14569
+
+# packages/apps/LMOSettings
+repopick 14464
+
+# packages/apps/LMOSystemUI
+repopick 14295-14296
+
+# packages/apps/Settings
+repopick 14337-14463
+
+# packages/modules/adb
+repopick 14272-14273
 
 # system/bpf
 repopick 14191-14192
@@ -159,9 +193,8 @@ repopick 14202
 
 # system/sepolicy
 repopick 13827-13840
-repopick 13864-13866
-#DNM
-repopick 14111
+# repopick 13864-13866
+repopick 14579
 
 # system/tools/mkbootimg
 # repopick 14203
@@ -174,4 +207,14 @@ repopick 14204-14218
 
 # vendor/lmodroid
 repopick 13824
-repopick 13849-13861
+repopick 13849-13857
+repopick 13860
+repopick 14573-14576
+repopick 13858-13859
+repopick 14577
+repopick 13861
+
+# vendor/qcom/opensource/commonsys/fm
+cd vendor/qcom/opensource/commonsys/fm
+git pull https://github.com/LineageOS/android_vendor_qcom_opensource_fm-commonsys refs/changes/61/403061/1
+cd -
