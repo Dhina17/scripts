@@ -38,10 +38,14 @@ repopick 14116
 # repopick 13843
 
 # device/daria/zahedan
-repopick 13862
+if [ -d "device/daria/zahedan" ]; then
+    repopick 13862
+fi
 
 # device/mediatek/sepolicy_vndr
-repopick 13965
+if [ -d "device/mediatek/sepolicy_vndr" ]; then
+    repopick 13965
+fi
 
 # external/avb
 # repopick 14117-14118
@@ -121,10 +125,13 @@ repopick 13958-13964
 repopick 14167-14177
 
 # hardware/mediatek
-cd hardware/mediatek
-git fetch https://github.com/LMODroid-TMP/platform_hardware_mediatek fifteen-qpr0
-git checkout FETCH_HEAD
-cd -
+DIR="hardware/mediatek"
+if [ -d "$DIR" ]; then
+    cd $DIR
+    git fetch https://github.com/LMODroid-TMP/platform_hardware_mediatek fifteen-qpr0
+    git checkout FETCH_HEAD
+    cd -
+fi
 
 # hardware/libhardware
 # repopick 14178-14180
