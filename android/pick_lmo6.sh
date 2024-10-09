@@ -57,8 +57,12 @@ repopick 14119-14126
 # repopick 13998-14000
 
 # external/exfatprogs
+
 # external/federated-compute
+repopick 14688
+
 # external/flatbuffers
+repopick 14689
 
 # external/gptfdisk
 # repopick 13966-13970
@@ -74,6 +78,7 @@ repopick 14119-14126
 # repopick 14131-14137
 
 # external/tensorflow
+repopick 14687
 
 # external/tinycompress
 # repopick 14138-14140
@@ -99,6 +104,7 @@ repopick 14275-14294
 
 # frameworks/lmodroid
 repopick 14523
+repopick 14806
 
 # frameworks/opt/colorpicker
 repopick 14141
@@ -150,6 +156,9 @@ repopick 14185-14190
 
 # packages/apps/FMRadio
 repopick 14580
+
+# packages/apps/FaceUnlock
+repopick 14690
 
 # packages/apps/GameSpace
 repopick 14578
