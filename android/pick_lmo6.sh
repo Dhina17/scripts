@@ -237,3 +237,7 @@ repopick 14577
 cd vendor/qcom/opensource/commonsys/fm
 git pull https://github.com/LineageOS/android_vendor_qcom_opensource_fm-commonsys refs/changes/61/403061/1
 cd -
+
+# Pick props topic
+repopick -t 15-QPR0-props
+repopick -t 15-QPR0-override-props
