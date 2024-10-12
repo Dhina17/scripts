@@ -101,6 +101,7 @@ cd -
 # frameworks/native
 repopick 13846
 repopick 14275-14294
+repopick 14828
 
 # frameworks/lmodroid
 repopick 14523
@@ -178,6 +179,9 @@ repopick 14337-14463
 # packages/modules/adb
 repopick 14272-14273
 
+# packages/services/VncFlinger
+repopick 14826-14827
+
 # system/bpf
 repopick 14191-14192
 
@@ -228,7 +232,6 @@ repopick 13860
 repopick 14573-14576
 repopick 13858-13859
 repopick 14577
-repopick 13861
 
 # vendor/qcom/opensource/commonsys/fm
 cd vendor/qcom/opensource/commonsys/fm
