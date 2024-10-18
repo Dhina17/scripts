@@ -176,8 +176,14 @@ repopick 14295-14296
 # packages/apps/Settings
 repopick 14337-14463
 
+# packages/apps/ThemePicker
+repopick 14942-14962
+
 # packages/modules/adb
 repopick 14272-14273
+
+# packages/services/Telecomm
+repopick 14926-14929
 
 # packages/services/VncFlinger
 repopick 14826-14827
@@ -207,6 +213,8 @@ repopick 14197
 # repopick 14201
 
 # system/netd
+repopick 14476-14477
+repopick 14963-14965
 
 # system/security
 repopick 14202
