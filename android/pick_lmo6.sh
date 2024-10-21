@@ -20,22 +20,22 @@ source vendor/lmodroid/build/envsetup.sh
 # art
 
 # build / make
-repopick 14004-14077
+# repopick 14004-14077
 
 # build / soong
-repopick 14078-14110
-repopick 14466
-repopick 14525
-repopick 14521
+# repopick 14078-14110
+# repopick 14466
+# repopick 14525
+# repopick 14521
 
 # bootable/deprecated-ota
-repopick 13953-13955
+# repopick 13953-13955
 
 # bootable/recovery
-repopick 13867-13952
+# repopick 13867-13952
 
 # device/generic/common
-repopick 14116
+# repopick 14116
 
 # development
 # repopick 13843
@@ -54,7 +54,7 @@ fi
 # repopick 14117-14118
 
 # external/dtc
-repopick 14119-14126
+# repopick 14119-14126
 
 # external/e2fsprogs
 # repopick 13998-14000
@@ -62,10 +62,10 @@ repopick 14119-14126
 # external/exfatprogs
 
 # external/federated-compute
-repopick 14688
+# repopick 14688
 
 # external/flatbuffers
-repopick 14689
+# repopick 14689
 
 # external/gptfdisk
 # repopick 13966-13970
@@ -81,7 +81,7 @@ repopick 14689
 # repopick 14131-14137
 
 # external/tensorflow
-repopick 14687
+# repopick 14687
 
 # external/tinycompress
 # repopick 14138-14140
@@ -93,7 +93,8 @@ repopick 14687
 # repopick 13847-13848
 
 # frameworks/av
-repopick 14311-14336
+# repopick 14311-14336
+repopick 14334-14336
 
 # frameworks/base
 cd frameworks/base
@@ -102,37 +103,40 @@ git checkout FETCH_HEAD
 cd -
 
 # frameworks/native
-repopick 13846
-repopick 14275-14294
+# repopick 13846
+# repopick 14275-14294
 repopick 14828
+repopick 14993
+# repopick 14294
+repopick 15016
 
 # frameworks/lmodroid
-repopick 14523
+# repopick 14523
 repopick 14806
 
 # frameworks/opt/colorpicker
-repopick 14141
+# repopick 14141
 
 # frameworks/opt/telephony
-repopick 14142-14152
+# repopick 14142-14152
 
 # frameworks/opt/timezonepicker
-repopick 14153-14155
+# repopick 14153-14155
 
 # hardware/broadcom/libbt
 repopick 14156-14163
 
 # hardware/google/gchips
-repopick 14164
+# repopick 14164
 
 # hardware/google/graphics/common
-repopick 14165-14166
+# repopick 14165-14166
 
 # hardware/google/pixel
-repopick 13958-13964
+# repopick 13958-13964
 
 # hardware/interfaces
-repopick 14167-14177
+# repopick 14167-14177
 
 # hardware/mediatek
 DIR="hardware/mediatek"
@@ -156,13 +160,13 @@ fi
 # repopick 14183-14184
 
 # kernel/configs
-repopick 14185-14190
+# repopick 14185-14190
 
 # packages/apps/FMRadio
-repopick 14580
+# repopick 14580
 
 # packages/apps/FaceUnlock
-repopick 14690
+# repopick 14690
 
 # packages/apps/GameSpace
 repopick 14578
@@ -180,10 +184,13 @@ repopick 14295-14296
 repopick 14337-14463
 
 # packages/apps/ThemePicker
-repopick 14942-14962
+# repopick 14942-14962
 
 # packages/modules/adb
-repopick 14272-14273
+# repopick 14272-14273
+
+# packages/modules/Connectivity
+repopick 14969-14981
 
 # packages/services/Telecomm
 repopick 14926-14929
@@ -192,19 +199,19 @@ repopick 14926-14929
 repopick 14826-14827
 
 # system/bpf
-repopick 14191-14192
+# repopick 14191-14192
 
 # system/core
-repopick 13971-13997
+# repopick 13971-13997
 
 # system/extras
-repopick 14193-14195
+# repopick 14193-14195
 
 # system/keymaster
-repopick 14196
+# repopick 14196
 
 # system/libhidl
-repopick 14197
+# repopick 14197
 
 # system/libziparchive
 # repopick 14198
@@ -216,33 +223,40 @@ repopick 14197
 # repopick 14201
 
 # system/netd
-repopick 14476-14477
-repopick 14963-14965
+# repopick 14476-14477
+repopick 14964-14965
 
 # system/security
-repopick 14202
+# repopick 14202
 
 # system/sepolicy
-repopick 13827-13840
+# repopick 13827-13840
 # repopick 13864-13866
-repopick 14579
+# repopick 14579
+repopick 14294
+repopick 13837
+repopick 13839
+repopick 13864-13866
 
 # system/tools/mkbootimg
 # repopick 14203
 
 # system/update_engine
-repopick 14219-14226
+# repopick 14219-14226
 
 # system/vold
-repopick 14204-14218
+# repopick 14204-14218
 
 # vendor/lmodroid
-repopick 13824
-repopick 13849-13857
-repopick 13860
-repopick 14573-14576
+# repopick 13824
+# repopick 13849-13857
+# repopick 13860
+# repopick 14573-14576
+# repopick 13858-13859
+# repopick 14577
 repopick 13858-13859
-repopick 14577
+repopick 14966
+
 
 # vendor/qcom/opensource/commonsys/fm
 cd vendor/qcom/opensource/commonsys/fm
@@ -250,5 +264,5 @@ git pull https://github.com/LineageOS/android_vendor_qcom_opensource_fm-commonsy
 cd -
 
 # Pick props topic
-repopick -t 15-QPR0-props
-repopick -t 15-QPR0-override-props
+# repopick -t 15-QPR0-props
+# repopick -t 15-QPR0-override-props
