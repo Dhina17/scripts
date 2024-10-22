@@ -94,7 +94,7 @@ fi
 
 # frameworks/av
 # repopick 14311-14336
-repopick 14334-14336
+# repopick 14334-14336
 
 # frameworks/base
 cd frameworks/base
