@@ -173,6 +173,9 @@ repopick 14578
 
 # packages/apps/Launcher3
 repopick 14565-14569
+repopick 14592
+repopick 14596
+repopick 14598-14604
 
 # packages/apps/LMOSettings
 repopick 14464
