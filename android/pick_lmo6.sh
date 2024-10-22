@@ -41,9 +41,9 @@ source vendor/lmodroid/build/envsetup.sh
 # repopick 13843
 
 # device/daria/zahedan
-if [ -d "device/daria/zahedan" ]; then
-    repopick 13862
-fi
+# if [ -d "device/daria/zahedan" ]; then
+#     repopick 13862
+# fi
 
 # device/mediatek/sepolicy_vndr
 if [ -d "device/mediatek/sepolicy_vndr" ]; then
