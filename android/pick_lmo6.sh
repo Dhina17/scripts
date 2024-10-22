@@ -124,7 +124,7 @@ repopick 14806
 # repopick 14153-14155
 
 # hardware/broadcom/libbt
-repopick 14156-14163
+# repopick 14156-14163
 
 # hardware/google/gchips
 # repopick 14164
@@ -233,7 +233,6 @@ repopick 14964-14965
 # repopick 13827-13840
 # repopick 13864-13866
 # repopick 14579
-repopick 14294
 repopick 13837
 repopick 13839
 repopick 13864-13866
