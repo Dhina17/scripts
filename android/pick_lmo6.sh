@@ -98,7 +98,7 @@ fi
 
 # frameworks/base
 cd frameworks/base
-git fetch https://git.libremobileos.com/Dhina17/platform_frameworks_base fifteen-qpr0-new
+git fetch https://git.libremobileos.com/Dhina17/platform_frameworks_base fifteen-qpr0-new-rebase
 git checkout FETCH_HEAD
 cd -
 
