@@ -110,6 +110,11 @@ repopick 14993
 # repopick 14294
 repopick 15016
 
+# frameworks/libs/systemui
+cd frameworks/libs/systemui
+git fetch https://gerrit.libremobileos.com/LMODroid/platform_frameworks_libs_systemui refs/changes/88/14588/2 && git checkout FETCH_HEAD
+cd -
+
 # frameworks/lmodroid
 # repopick 14523
 repopick 14806
@@ -172,7 +177,9 @@ fi
 # repopick 14578
 
 # packages/apps/Launcher3
-repopick -t V-launcher
+cd packages/apps/Launcher3
+git fetch https://gerrit.libremobileos.com/LMODroid/platform_packages_apps_Launcher3 refs/changes/35/15635/1 && git checkout FETCH_HEAD
+cd -
 
 # packages/apps/LMOSettings
 repopick 14464
