@@ -98,7 +98,7 @@ fi
 
 # frameworks/base
 cd frameworks/base
-git fetch https://git.libremobileos.com/Dhina17/platform_frameworks_base fifteen-qpr0-new-rebase
+git fetch https://git.libremobileos.com/Dhina17/platform_frameworks_base fifteen-qpr0-los
 git checkout FETCH_HEAD
 cd -
 
@@ -169,13 +169,10 @@ fi
 # repopick 14690
 
 # packages/apps/GameSpace
-repopick 14578
+# repopick 14578
 
 # packages/apps/Launcher3
-repopick 14565-14569
-repopick 14592
-repopick 14596
-repopick 14598-14604
+repopick -t V-launcher
 
 # packages/apps/LMOSettings
 repopick 14464
@@ -184,8 +181,9 @@ repopick 14464
 repopick 14295-14296
 
 # packages/apps/Settings
-repopick 14337-14463
-repopick 15582
+cd packages/apps/Settings
+git fetch https://gerrit.libremobileos.com/LMODroid/platform_packages_apps_Settings refs/changes/38/14438/4 && git checkout FETCH_HEAD
+cd -
 
 # packages/apps/ThemePicker
 # repopick 14942-14962
