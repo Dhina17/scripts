@@ -1,7 +1,7 @@
-# To build LMODroid 6 by picking patches from gerrit
+# To build LMODroid 6.1 by picking patches from gerrit
 # Repo int fifteen branch locally
 #
-# > repo init -u https://gerrit.libremobileos.com/LMODroid/manifest -b fifteen --git-lfs
+# > repo init -u https://gerrit.libremobileos.com/LMODroid/manifest -b refs/changes/75/16275/1 --git-lfs
 #
 # Then add zahedan repos to local manifest
 # > wget https://katb.in/sugafoquvon/raw -O .repo/local_manifests/zahedan.xml
@@ -19,82 +19,73 @@ source vendor/lmodroid/build/envsetup.sh
 
 # art
 
+# bionic
+repopick 16408-16409
+
 # build / make
-# repopick 14004-14077
+repopick 16289-16366
 
 # build / soong
-# repopick 14078-14110
-# repopick 14466
-# repopick 14525
-# repopick 14521
+repopick 16367-16407
+repopick 16410
 
 # bootable/deprecated-ota
-# repopick 13953-13955
+repopick 16504-16506
 
 # bootable/recovery
-# repopick 13867-13952
+repopick 16411-16503
 
 # device/generic/common
-# repopick 14116
+repopick 16507
 
 # development
-# repopick 13843
+repopick 16508
 
 # device/daria/zahedan
-# if [ -d "device/daria/zahedan" ]; then
-#     repopick 13862
-# fi
+
 
 # device/mediatek/sepolicy_vndr
-if [ -d "device/mediatek/sepolicy_vndr" ]; then
-    repopick 13965
-fi
 
 # external/avb
-# repopick 14117-14118
+repopick 16509-16510
 
 # external/dtc
-# repopick 14119-14126
+repopick 16511-16522
 
 # external/e2fsprogs
-# repopick 13998-14000
+repopick 16522-16525
 
 # external/exfatprogs
 
 # external/federated-compute
-# repopick 14688
+repopick 16526
 
 # external/flatbuffers
-# repopick 14689
+repopick 16527
 
 # external/gptfdisk
-# repopick 13966-13970
+repopick 16528-16532
 
 # external/libcxx
 # external/libnl
 # external/libvpx
-
 # external/mksh
-# repopick 14001-14003
 
 # external/setupcompat
-# repopick 14131-14137
+repopick 16533-16539
 
 # external/tensorflow
-# repopick 14687
+repopick 16540
 
 # external/tinycompress
-# repopick 14138-14140
-
 # external/webp
 # external/wpa_supplicant_8
 
 # external/zstd
-# repopick 13847-13848
+repopick 16541-16542
 
 # frameworks/av
-# repopick 14311-14336
-# repopick 14334-14336
+repopick 16543-16572
 
 # frameworks/base
 cd frameworks/base
@@ -103,57 +94,52 @@ git checkout FETCH_HEAD
 cd -
 
 # frameworks/native
-# repopick 13846
-# repopick 14275-14294
-repopick 14828
-repopick 14993
-# repopick 14294
-repopick 15016
+repopick 16573-16595
 
 # frameworks/libs/systemui
-cd frameworks/libs/systemui
-git fetch https://gerrit.libremobileos.com/LMODroid/platform_frameworks_libs_systemui refs/changes/88/14588/2 && git checkout FETCH_HEAD
-cd -
+repopick 16596-16603
 
 # frameworks/lmodroid
-# repopick 14523
-repopick 14806
+
 
 # frameworks/opt/colorpicker
-# repopick 14141
+repopick 16604
 
 # frameworks/opt/telephony
-# repopick 14142-14152
+repopick 16608-16615
 
 # frameworks/opt/timezonepicker
-# repopick 14153-14155
+repopick 16605-16607
 
 # hardware/broadcom/libbt
-# repopick 14156-14163
+repopick 16616-16623
+
+# hardware/google/camera
+repopick 16624
 
 # hardware/google/gchips
-# repopick 14164
+repopick 16625
 
 # hardware/google/graphics/common
-# repopick 14165-14166
+repopick 16626-16627
 
 # hardware/google/pixel
-# repopick 13958-13964
+repopick 16628-16635
 
 # hardware/interfaces
-# repopick 14167-14177
+repopick 16636-16648
 
 # hardware/mediatek
-DIR="hardware/mediatek"
-if [ -d "$DIR" ]; then
-    cd $DIR
-    git fetch https://github.com/LMODroid-TMP/platform_hardware_mediatek fifteen-qpr0
-    git checkout FETCH_HEAD
-    cd -
-fi
+# DIR="hardware/mediatek"
+# if [ -d "$DIR" ]; then
+#     cd $DIR
+#     git fetch https://github.com/LMODroid-TMP/platform_hardware_mediatek fifteen-qpr0
+#     git checkout FETCH_HEAD
+#     cd -
+# fi
 
 # hardware/libhardware
-# repopick 14178-14180
+repopick 16649-16651
 
 # hardware/ril
 # repopick 14181
