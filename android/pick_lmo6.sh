@@ -89,7 +89,7 @@ repopick 16543-16572
 
 # frameworks/base
 cd frameworks/base
-git fetch https://git.libremobileos.com/Dhina17/platform_frameworks_base fifteen-qpr0-los
+git fetch https://git.libremobileos.com/Dhina17/platform_frameworks_base fifteen-qpr1
 git checkout FETCH_HEAD
 cd -
 
@@ -142,121 +142,91 @@ repopick 16636-16648
 repopick 16649-16651
 
 # hardware/ril
-# repopick 14181
 
 # hardware/samsung/nfc
-# repopick 14182
 
 # hardware/st/nfc
-# repopick 14183-14184
 
 # kernel/configs
-# repopick 14185-14190
+repopick 16667-16672
+
+# packages/apps/Camera2
+
+# packages/apps/DeskClock
+repopick 17258
 
 # packages/apps/FMRadio
-# repopick 14580
 
 # packages/apps/FaceUnlock
-# repopick 14690
 
 # packages/apps/GameSpace
-# repopick 14578
+repopick 17258
 
 # packages/apps/Launcher3
-cd packages/apps/Launcher3
-git fetch https://gerrit.libremobileos.com/LMODroid/platform_packages_apps_Launcher3 refs/changes/35/15635/1 && git checkout FETCH_HEAD
-cd -
+
 
 # packages/apps/LMOSettings
-repopick 14464
+repopick 17262-17263
 
 # packages/apps/LMOSystemUI
-repopick 14295-14296
+repopick 17260
+
+# packages/apps/ParallelSpace
+repopick 17256
 
 # packages/apps/Settings
-cd packages/apps/Settings
-git fetch https://gerrit.libremobileos.com/LMODroid/platform_packages_apps_Settings refs/changes/38/14438/4 && git checkout FETCH_HEAD
-cd -
+
+# packages/apps/TouchGestures
+repopick 17257
 
 # packages/apps/ThemePicker
-# repopick 14942-14962
 
 # packages/modules/adb
-# repopick 14272-14273
+repopick 17129-17131
+
+# packages/modules/common
+repopick 17151
 
 # packages/modules/Connectivity
-repopick 14969-14981
 
 # packages/services/Telecomm
-repopick 14926-14929
 
 # packages/services/VncFlinger
-repopick 14826-14827
 
 # system/bpf
-# repopick 14191-14192
 
 # system/core
-# repopick 13971-13997
 
 # system/extras
-# repopick 14193-14195
 
 # system/keymaster
-# repopick 14196
 
 # system/libhidl
-# repopick 14197
 
 # system/libziparchive
-# repopick 14198
 
 # system/logging
-# repopick 14199-14200
 
 # system/media
-# repopick 14201
 
 # system/netd
-# repopick 14476-14477
-repopick 14964-14965
+
 
 # system/security
-# repopick 14202
 
 # system/sepolicy
-# repopick 13827-13840
-# repopick 13864-13866
-# repopick 14579
-repopick 13837
-repopick 13839
-repopick 13864-13866
+repopick 17215-17227
 
 # system/tools/mkbootimg
-# repopick 14203
 
 # system/update_engine
-# repopick 14219-14226
+repopick 17229-17236
 
 # system/vold
 # repopick 14204-14218
 
 # vendor/lmodroid
-# repopick 13824
-# repopick 13849-13857
-# repopick 13860
-# repopick 14573-14576
-# repopick 13858-13859
-# repopick 14577
-repopick 13858-13859
-repopick 14966
-
+repopick 16652-16658
+repopick 17255
 
 # vendor/qcom/opensource/commonsys/fm
-cd vendor/qcom/opensource/commonsys/fm
-git pull https://github.com/LineageOS/android_vendor_qcom_opensource_fm-commonsys refs/changes/61/403061/1
-cd -
-
-# Pick props topic
-# repopick -t 15-QPR0-props
-# repopick -t 15-QPR0-override-props
