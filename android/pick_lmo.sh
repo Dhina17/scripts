@@ -399,6 +399,10 @@ repopick 21448
 repopick 21449
 
 # LMODroid/platform_frameworks_base
+cd frameworks/base
+git fetch https://git.libremobileos.com/Dhina17/platform_frameworks_base sixteen-qpr0
+git check-out FETCH_HEAD
+cd --
 
 # LMODroid/platform_frameworks_libs_systemui
 
