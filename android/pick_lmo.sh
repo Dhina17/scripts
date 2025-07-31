@@ -134,87 +134,10 @@ repopick 21411
 repopick 21412
 
 # LMODroid/platform_build
-repopick 21283
-repopick 21284
-repopick 21285
-repopick 21286
-repopick 21287
-repopick 21288
-repopick 21289
-repopick 21290
-repopick 21291
-repopick 21292
-repopick 21293
-repopick 21294
-repopick 21295
-repopick 21296
-repopick 21297
-repopick 21298
-repopick 21299
-repopick 21300
-repopick 21301
-repopick 21302
-repopick 21303
-repopick 21304
-repopick 21305
-repopick 21306
-repopick 21307
-repopick 21308
-repopick 21309
-repopick 21310
-repopick 21311
-repopick 21312
-repopick 21313
-repopick 21314
-repopick 21315
-repopick 21316
-repopick 21317
-repopick 21318
-repopick 21319
-repopick 21320
-repopick 21321
-repopick 21322
-repopick 21323
-repopick 21324
-repopick 21325
-repopick 21326
-repopick 21327
-repopick 21328
-repopick 21329
-repopick 21330
-repopick 21331
-repopick 21332
-repopick 21333
-repopick 21334
-repopick 21335
-repopick 21336
-repopick 21337
-repopick 21338
-repopick 21339
-repopick 21340
-repopick 21341
-repopick 21342
-repopick 21343
-repopick 21344
-repopick 21345
-repopick 21346
-repopick 21347
-repopick 21348
-repopick 21349
-repopick 21350
-repopick 21351
-repopick 21352
-repopick 21353
-repopick 21354
-repopick 21355
-repopick 21356
-repopick 21357
-repopick 21358
-repopick 21359
-repopick 21360
-repopick 21361
-repopick 21362
-repopick 21363
+cd build/make
+git fetch https://gerrit.libremobileos.com/LMODroid/platform_build refs/changes/59/21359/1
+git checkout FETCH_HEAD
+cd ../..
 
 # LMODroid/platform_build_soong
 repopick 21364
@@ -396,13 +319,12 @@ repopick 21445
 repopick 21446
 repopick 21447
 repopick 21448
-repopick 21449
 
 # LMODroid/platform_frameworks_base
 cd frameworks/base
 git fetch https://git.libremobileos.com/Dhina17/platform_frameworks_base sixteen-qpr0
-git check-out FETCH_HEAD
-cd --
+git checkout FETCH_HEAD
+cd ../..
 
 # LMODroid/platform_frameworks_libs_systemui
 
